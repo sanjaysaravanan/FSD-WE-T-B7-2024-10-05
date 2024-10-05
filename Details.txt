@@ -1,0 +1,19 @@
+
+Topics:
+
+  Recap landing Page Development
+
+  1. Complete the existing Design along with reponsiveness
+
+  2. Tips & Tricks for the Layout & Landing Page Designs,
+
+    0. Card Design Implmentation
+    1. Header or Sidebar
+    2. Background Image
+    3. Navigation Bar
+    4. Main Content Alignment
+
+Live Practice:
+
+  Choose Good & Simple Design for Implmentation
+  

@@ -1,0 +1,97 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+.header {
+  position: sticky;
+  top: 0px;
+  /* border-bottom: 1px solid; */
+  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+  background-color: white;
+}
+.aside {
+  display: none;
+  position: fixed;
+  top: 64px;
+  background-color: white;
+  width: 250px;
+  height: 100vh;
+  /* border-right: 1px solid; */
+  box-shadow: 0 10px 5px 5px rgba(64, 60, 67, 0.16);
+}
+.main {
+  min-height: 100vh;
+}
+footer {
+  margin-left: 250px;
+  padding: 16px;
+}
+.header-div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu-icon {
+  padding: 16px;
+}
+
+/* hover one sibling, change other sibling style */
+.menu-icon:hover + .aside,
+.aside:hover {
+  display: block;
+}
+
+#home {
+  background-image: url("./bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section {
+  height: 100vh;
+  padding: 16px;
+  padding-top: 64px;
+}
+
+.section:nth-of-type(odd) {
+  background-color: aliceblue;
+}
+
+.search-bar {
+  position: relative;
+  flex-grow: 1;
+}
+
+.search-bar > input {
+  padding: 8px;
+  border-radius: 8px;
+  width: calc(100% - 16px);
+}
+
+.search-bar > i {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+/* hover parent, change child style */
+/* .header-div:hover > .aside {
+  display: block;
+}
+ */
+/* Hide the Icon Above 750px */
+@media screen and (min-width: 750px) {
+  .menu-icon {
+    visibility: hidden;
+  }
+  .aside {
+    display: block;
+  }
+  .main {
+    margin-left: 250px;
+  }
+}

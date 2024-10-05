@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+}
+.header {
+  position: sticky;
+  top: 0px;
+  /* border-bottom: 1px solid; */
+  box-shadow: 0 2px 5px 1px rgba(64, 60, 67, 0.16);
+  background-color: white;
+  text-align: center;
+}
+.aside {
+  display: none;
+  position: fixed;
+  top: 64px;
+  background-color: white;
+  width: 250px;
+  height: 100vh;
+  /* border-right: 1px solid; */
+  box-shadow: 0 10px 5px 5px rgba(64, 60, 67, 0.16);
+}
+.main {
+  min-height: 100vh;
+  padding: 16px;
+}
+footer {
+  margin-left: 250px;
+  padding: 16px;
+}
+.header-div {
+  display: flex;
+}
+
+.menu-icon {
+  padding: 16px;
+}
+
+/* hover one sibling, change other sibling style */
+.menu-icon:hover + .aside,
+.aside:hover {
+  display: block;
+}
+
+/* hover parent, change child style */
+/* .header-div:hover > .aside {
+  display: block;
+}
+ */
+/* Hide the Icon Above 750px */
+@media screen and (min-width: 750px) {
+  .menu-icon {
+    visibility: hidden;
+  }
+  .aside {
+    display: block;
+  }
+  .main {
+    margin-left: 250px;
+  }
+}
