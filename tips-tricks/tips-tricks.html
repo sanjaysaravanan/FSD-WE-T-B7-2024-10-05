@@ -38,10 +38,17 @@
         margin: 16px;
         gap: 48px;
         align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
       .highlight {
         color: var(--primary-color);
+      }
+
+      .filter-item {
+        flex-shrink: 0;
+        min-width: 136px;
       }
 
       .filter-item > h3 {
@@ -80,11 +87,13 @@
         justify-content: center;
         gap: 24px;
         margin: 16px;
+        flex-wrap: wrap;
       }
 
       .booking-card {
         background-color: white;
         border-radius: 12px;
+        flex-shrink: 0;
       }
 
       .card-title {
